@@ -85,7 +85,7 @@ public SortController(SortModelContext context)
         private bool ValidateForm(ref string OriginalNumbers)
         {
 
-            var regexContainsNumbersDelimitedByCommas = @"^\d+,{1}(\d+|,{1})*\d+$";
+            var regexContainsNumbersDelimitedByCommas = @"^\d+,{1}(\d+,{1})*\d+$";
             Match match = Regex.Match(OriginalNumbers, regexContainsNumbersDelimitedByCommas);
 
             if (!match.Success)
