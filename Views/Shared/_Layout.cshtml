@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SortingAlgorithms</title>
+    <title>@ViewData["Title"] - Sorting Algorithms with ASP.NET Core MVC</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -26,26 +26,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">SortingAlgorithms</a>
+                <a asp-area="" asp-controller="Sort" asp-action="Index" class="navbar-brand">Sorting Algorithms with ASP.NET Core MVC</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                <li>
+<a href="https://www.mikepblack.com" target="_blank">www.mikepblack.com</a>
+                    </li>
                 </ul>
-                <partial name="_LoginPartial" />
+                @*<partial name="_LoginPartial" />*@
             </div>
         </div>
     </nav>
 
-    <partial name="_CookieConsentPartial" />
+    @*<partial name="_CookieConsentPartial" />*@
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - SortingAlgorithms</p>
+            <p>&copy; 2018 - <a href="https://www.mikepblack.com" target="_blank" style="color: inherit;">Mike Black</a></p>
         </footer>
     </div>
 

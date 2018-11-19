@@ -7,10 +7,18 @@ using SortingAlgorithms.Controllers;
 
 namespace SortingAlgorithms
 {
+    /// <summary>
+    /// Contains several common sorting algorithms that can be used
+    /// </summary>
     public class Sorter
     {
+        // accumulates a string with each iteration of the sort for display
         public string EachIteration { get; set; }
 
+        /// <summary>
+        /// updates the current list of iterations for display
+        /// </summary>
+        /// <param name="nums">Nums.</param>
         internal void PrintList(ref List<int> nums)
         {
             EachIteration += string.Join(",", nums);

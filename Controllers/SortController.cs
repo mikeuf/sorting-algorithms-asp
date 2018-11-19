@@ -10,11 +10,13 @@ namespace SortingAlgorithms.Models
 {
     public class SortController : Controller
     {
-
         private readonly SortModelContext _context;
 
-
-public SortController(SortModelContext context)
+        /// <summary>
+        /// Set up the database context 
+        /// </summary>
+        /// <param name="context">Context.</param>
+        public SortController(SortModelContext context)
         {
             _context = context;
         }
@@ -25,45 +27,28 @@ public SortController(SortModelContext context)
             return View();
         }
 
+        /// <summary>
+        /// Uses the value provided by the drop-down box in the view to determine
+        /// which sorting algorithm to use. After the sort, it passes a data
+        /// model object to the view with results.
+        /// </summary>
+        /// <returns>The sort.</returns>
+        /// <param name="OriginalNumbers">Original numbers.</param>
+        /// <param name="SortType">Sort type.</param>
         public IActionResult Sort(string OriginalNumbers, string SortType)
         {
-
-
-            //var algos = _context.Algorithm
-            //.FirstOrDefault(a => a.AlgorithmName == "Bubble Sort");
-
-
-
-
-
-
-            //var algos = from a in _context.Algorithm
-            //where a.AlgorithmName == "Bubble Sort"
-            //orderby a.AlgorithmID
-            //select a;
-
-            //  var idonknow = algos.Where(x => x.AlgorithmName = "Bubble Sort");
-
-            //  var e = _context.Algorithms.Where(x => x.AlgorithmName == "Bubble Sort").FirstOrDefault();
-
-
             if ((OriginalNumbers == null) || !ValidateForm(ref OriginalNumbers))
             {
                 return View("ValidationError");
             }
 
-          //  ViewBag.AlgoName = _context.Algorithm.Select(x => x.AlgorithmName == "Bubble Sort").ToList();
-
-         //   ViewBag.AlgoName = _context.Algorithm.First();
-
+            // populates the a new list based on a comma-separated string
             List<int> nums = OriginalNumbers.Split(',').Select(int.Parse).ToList();
-
-          // ViewBag.OriginalNumbers = OriginalNumbers;
 
             if ((OriginalNumbers != null) && (SortType != null))
             {
+                // choose a sort based on the user selection
                 Sorter theSorter = new Sorter();
-
                 switch (SortType)
                 {
                     case "Bubble Sort":
@@ -88,32 +73,35 @@ public SortController(SortModelContext context)
                         break;
                     default:
                         break;
-
                 }
             }
 
-        //   ViewBag.SortType = SortType;
-         //   ViewBag.SortedNumbers = string.Join(",", nums);
+            // create a model object, fill it with results and pass to the view
+            SortModel sortResults = new SortModel();
+            // queries database based on the SortType that was selected
+            sortResults.Algorithms = from a in _context.Algorithm
+                               where a.AlgorithmName == SortType
+                               select a;
 
-            SortModel sorty = new SortModel();
-
-            sorty.Algorithms = from a in _context.Algorithm
-                        where a.AlgorithmName == SortType
-                        select a;
-
-            if (sorty.Algorithms == null)
+            if (sortResults.Algorithms == null)
             {
                 return NotFound();
             }
 
-            sorty.OriginalNumbers = OriginalNumbers;
-            sorty.SortedNumbers = string.Join(",", nums);
-            sorty.SortType = SortType;
+            sortResults.OriginalNumbers = OriginalNumbers;
+            // create comma-separated string by concatenating the list items
+            sortResults.SortedNumbers = string.Join(",", nums);
+            sortResults.SortType = SortType;
 
-
-            return View(sorty);
+            return View(sortResults);
         }
 
+        /// <summary>
+        /// Performs a quick validation check using regex to ensure that the form
+        /// contains only integers and commas. 
+        /// </summary>
+        /// <returns><c>true</c>, if form was validated, <c>false</c> otherwise.</returns>
+        /// <param name="OriginalNumbers">Original numbers.</param>
         private bool ValidateForm(ref string OriginalNumbers)
         {
 
@@ -127,9 +115,5 @@ public SortController(SortModelContext context)
 
             return true;
         }
-
-
-
-
     }
 }

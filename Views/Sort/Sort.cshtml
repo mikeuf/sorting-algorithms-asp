@@ -5,7 +5,7 @@
 
 
 @{
-    ViewData["Title"] = "Sorting Algorithm";
+    ViewData["Title"] = "Sorting Algorithms";
 }
 <h2>@ViewData["Title"]</h2>
 
@@ -21,32 +21,30 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Completed a @Model.SortType</div>
                 <div class="panel-body">
-                    <dl style="display: block; float: right; text-align: left; width: 50%;">
+                    <dl style="display: block; float: right; text-align: left; width: 50%; min-width:280px">
                         <h3>Additional Details</h3>
                         @foreach (var item in Model.Algorithms)
-        {
-                <dt>Algorithm Name:</dt>
-                <dd>
-                    @Html.DisplayFor(modelItem => item.AlgorithmName)
-                </dd>
-                <dd>&nbsp;</dd>
-                <dt>Runtime complexity:</dt>
-                <dd>
-                    @Html.DisplayFor(modelItem => item.RunTime)
-                </dd>
-                <dd>&nbsp;</dd>
-                <dt>Space complexity:</dt>
-                <dd>
-                    @Html.DisplayFor(modelItem => item.SpaceComplexity)
-                </dd>
-                <dd>&nbsp;</dd>
-                <dt>Additional Notes:</dt>
-                <dd>
-                    @Html.DisplayFor(modelItem => item.AdditionalNotes)
-                </dd>
-}
-
-
+                        {
+                            <dt>Algorithm Name:</dt>
+                            <dd>
+                                @Html.DisplayFor(modelItem => item.AlgorithmName)
+                            </dd>
+                            <dd>&nbsp;</dd>
+                            <dt>Runtime complexity:</dt>
+                            <dd>
+                                @Html.DisplayFor(modelItem => item.RunTime)
+                            </dd>
+                            <dd>&nbsp;</dd>
+                            <dt>Space complexity:</dt>
+                            <dd>
+                                @Html.DisplayFor(modelItem => item.SpaceComplexity)
+                            </dd>
+                            <dd>&nbsp;</dd>
+                            <dt>Additional Notes:</dt>
+                            <dd>
+                                @Html.DisplayFor(modelItem => item.AdditionalNotes)
+                            </dd>
+                        }
 
                     </dl>
                     <h3>Results</h3>
