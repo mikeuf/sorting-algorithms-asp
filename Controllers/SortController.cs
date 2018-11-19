@@ -96,17 +96,19 @@ public SortController(SortModelContext context)
          //   ViewBag.SortedNumbers = string.Join(",", nums);
 
             SortModel sorty = new SortModel();
-            sorty.OriginalNumbers = OriginalNumbers;
-            sorty.SortedNumbers = string.Join(",", nums);
-            sorty.SortType = SortType;
+
             sorty.Algorithms = from a in _context.Algorithm
-                        where a.AlgorithmName == "Bubble Sort"
+                        where a.AlgorithmName == SortType
                         select a;
 
             if (sorty.Algorithms == null)
             {
                 return NotFound();
             }
+
+            sorty.OriginalNumbers = OriginalNumbers;
+            sorty.SortedNumbers = string.Join(",", nums);
+            sorty.SortType = SortType;
 
 
             return View(sorty);
