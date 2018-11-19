@@ -11,5 +11,5 @@ The Readability Checker will provide an analysis of the selection. Text with goo
 **Note:** This version of the Readability Checker may produce slightly different results from the Java version because of differences between the RegEx implementations and because the Java version uses an HTML editor instead of a text editor.
 
 
-**Figure 1 - Good readability**
-![Good readability](https://github.com/mikeuf/readability-checker-with-cs/blob/master/screenshots/good-readability.jpg "Good readability")
+**Figure 1 - Insertion Sort**
+![Insertion Sort](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/1-insertion-sort.jpg "Insertion Sort")
