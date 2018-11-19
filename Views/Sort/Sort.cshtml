@@ -1,7 +1,8 @@
-﻿@model SortModel
+﻿@model IEnumerable<SortingAlgorithms.Models.Algorithm>
+
 
 @{
-    ViewData["Title"] = "Sorting Algorithms";
+    ViewData["Title"] = "Sorting Algorithm";
 }
 <h2>@ViewData["Title"]</h2>
 
@@ -19,7 +20,11 @@
                 <div class="panel-body">
                     <div style="display: block; float: right; text-align: left; width: 50%;">
                         <p><b>Additional Details</b></p>
-                        <p>Lorem Ipsum</p>
+                        <p>@Html.DisplayNameFor(model => model.AlgorithmName)</p>
+                        @*@{var algoName = from a in Model.AlgorithmName select a.AlgorithmName;}*@
+                        @*@{r a = Model.Where(x => xAlgorithmID == 1); }
+                        @*<b>@Model.Select(x => x.AlgorithmID == 1)</b>*@
+
                     </div>
                     <dl>
                         <dt>Before Sorting</dt>

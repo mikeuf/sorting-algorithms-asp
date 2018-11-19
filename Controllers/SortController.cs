@@ -10,6 +10,14 @@ namespace SortingAlgorithms.Models
 {
     public class SortController : Controller
     {
+
+        private readonly SortModelContext _context;
+
+public SortController(SortModelContext context)
+        {
+            _context = context;
+        }
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -18,9 +26,11 @@ namespace SortingAlgorithms.Models
 
         public IActionResult Sort(string OriginalNumbers, string SortType)
         {
-            if ((OriginalNumbers == null) || !ValidateForm(ref OriginalNumbers)) 
+
+
+            if ((OriginalNumbers == null) || !ValidateForm(ref OriginalNumbers))
             {
-                return View("ValidationError"); 
+                return View("ValidationError");
             }
 
             List<int> nums = OriginalNumbers.Split(',').Select(int.Parse).ToList();
@@ -65,7 +75,8 @@ namespace SortingAlgorithms.Models
             return View();
         }
 
-        private bool ValidateForm (ref string OriginalNumbers) {
+        private bool ValidateForm(ref string OriginalNumbers)
+        {
 
             var regexContainsNumbersDelimitedByCommas = @"^\d+,{1}(\d+|,{1})*\d+$";
             Match match = Regex.Match(OriginalNumbers, regexContainsNumbersDelimitedByCommas);
