@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{7A80F0ED-571D-4758-BED4-2F5CA6368098}|Default">
   <MonoDevelop.Ide.ItemProperties.SortingAlgorithms PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Sort/Sort.cshtml">
     <Files>
-      <File FileName="Models/SortModel.cs" Line="17" Column="70" />
-      <File FileName="Views/Sort/Sort.cshtml" Line="24" Column="1" />
-      <File FileName="Controllers/SortController.cs" Line="16" Column="31" />
+      <File FileName="Models/SortModel.cs" Line="24" Column="27" />
+      <File FileName="Views/Sort/Sort.cshtml" Line="2" Column="12" />
+      <File FileName="Controllers/SortController.cs" Line="33" Column="13" />
       <File FileName="Data/ApplicationDbContext.cs" Line="1" Column="1" />
       <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Startup.cs" Line="8" Column="33" />
+      <File FileName="Startup.cs" Line="16" Column="1" />
+      <File FileName="Views/Sort/Index.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

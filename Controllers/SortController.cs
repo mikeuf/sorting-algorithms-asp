@@ -26,12 +26,19 @@ public SortController(SortModelContext context)
 
         public IActionResult Sort(string OriginalNumbers, string SortType)
         {
-
+            var algos = from a in _context.Algorithms
+                        where a.AlgorithmName == "Bubble Sort"
+                            orderby a.AlgorithmID
+                            select a;
 
             if ((OriginalNumbers == null) || !ValidateForm(ref OriginalNumbers))
             {
                 return View("ValidationError");
             }
+
+          //  ViewBag.AlgoName = _context.Algorithm.Select(x => x.AlgorithmName == "Bubble Sort").ToList();
+
+         //   ViewBag.AlgoName = _context.Algorithm.First();
 
             List<int> nums = OriginalNumbers.Split(',').Select(int.Parse).ToList();
 

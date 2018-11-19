@@ -17,7 +17,7 @@ namespace SortingAlgorithms.Models
         public SortModelContext(DbContextOptions options) : base(options)
        { }
 
-public DbSet<Algorithm> AlgorithmTable { get; set; }
+public DbSet<Algorithm> Algorithms { get; set; }
 
     }
 

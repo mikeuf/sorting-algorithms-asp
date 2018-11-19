@@ -26,6 +26,10 @@
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.g.cshtml.cs
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/Index.g.cshtml.cs
+/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/Sort.g.cshtml.cs
+/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/ValidationError.g.cshtml.cs
+/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/_SortSelector.g.cshtml.cs
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.RazorTargetAssemblyInfo.cache
@@ -34,7 +38,3 @@
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.dll
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.pdb
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.csproj.CopyComplete
-/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/Index.g.cshtml.cs
-/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/Sort.g.cshtml.cs
-/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/ValidationError.g.cshtml.cs
-/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/Razor/Views/Sort/_SortSelector.g.cshtml.cs
