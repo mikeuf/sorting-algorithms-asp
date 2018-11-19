@@ -1,0 +1,30 @@
+﻿@model SortModel
+
+@{
+    ViewData["Title"] = "Sorting Algorithms";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            @await Html.PartialAsync("_SortSelector", Model)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="panel panel-danger">
+                <div class="panel-heading">Please Review Your Numbers</div>
+                <div class="panel-body">
+                    <ul><p>Suggestions:</p>
+                    <li>Enter only integers, separated by commas.</li>
+                    <li>The first and last characters must be integers (not commas).</li>
+                    <li>There should be at least two integers.</li>
+                    <li>Floating points are not supported.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

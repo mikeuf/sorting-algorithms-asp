@@ -1,0 +1,38 @@
+﻿@model SortModel
+
+@{
+    ViewData["Title"] = "Sorting Algorithms";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            @await Html.PartialAsync("_SortSelector", Model)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="panel panel-success">
+                <div class="panel-heading">Results of the @ViewBag.SortType</div>
+                <div class="panel-body">
+                    <div style="display: block; float: right; text-align: left; width: 50%;">
+                        <p><b>Additional Details</b></p>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <dl>
+                        <dt>Before Sorting</dt>
+                        <dd>@ViewBag.OriginalNumbers</dd>
+                        <dd>&nbsp;</dd>
+                        <dt>After Sorting</dt>
+                        <dd>@ViewBag.SortedNumbers</dd>
+                        <dd>&nbsp;</dd>
+                        <dt>Below is every step of the sort:</dt>
+                        <dd>@Html.Raw(ViewBag.EachIteration.Replace(System.Environment.NewLine, "<br/>"))</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SortModel
+<div class="panel panel-default">
+    <div class="panel-heading">Configure a Sort</div>
+    <div class="panel-body">
+        <form asp-action="Sort">
+            <p>1. Enter a set of integers, separated by commas.</p>
+            <input asp-for="OriginalNumbers" placeholder="" />
+            <p>&nbsp;</p>
+            <p>2. Choose a sorting algorithm and click the <b>Sort</b> button.</p>
+            <select asp-for="SortType">
+                <option value="Bubble Sort">Bubble Sort</option>
+                <option value="Selection Sort">Selection Sort</option>
+                <option value="Insertion Sort">Insertion Sort</option>
+                <option value="Merge Sort">Merge Sort</option>
+                <option value="Quick Sort">Quick Sort</option>
+            </select>
+            <input type="submit" value="Sort" />
+        </form>
+        </div>
+    </div>

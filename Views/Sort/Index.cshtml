@@ -1,0 +1,14 @@
+﻿@model SortModel
+
+@{
+    ViewData["Title"] = "Sorting Algorithms";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            @await Html.PartialAsync("_SortSelector", Model)
+        </div>
+    </div>
+</div>
