@@ -23,7 +23,7 @@
                 <div class="panel-body">
                     <div style="display: block; float: right; text-align: left; width: 50%;">
                         <p><b>Additional Details</b></p>
-                        @*@foreach (var item in Model)
+                        @foreach (var item in Model.Algorithms)
                         {
 
                             @Html.DisplayFor(modelItem => item.AlgorithmName)
@@ -31,7 +31,7 @@
                             @Html.DisplayFor(modelItem => item.AlgorithmID)
 
                             @Html.DisplayFor(modelItem => item.RunTime)
-                        }*@
+                        }
 
                         @*<p>@ViewBag.AlgoName</p>*@
                         @*@{var algoName = from a in Model.AlgorithmName select a.AlgorithmName;}*@
