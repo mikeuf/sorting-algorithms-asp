@@ -20,11 +20,11 @@ This program allows you to choose from the following sorting algorithms:
 * Quick Sort
 
 Once numbers have been entered and a sort has been selected, SortController peforms a form validation check using regex. If the set passes the check, it is parsed into a list which is sent, by reference, to Library/Sorter.cs, which performs the actual algorithms. It also keeps track of each iteration so the user can see each step of the process.<br /><br />
-The results include an "Additional Details" section which displays more information about each algorithm, including runtime complexity and additional notes. These details are stored in a SQLite database.<br />
+The results include an "Additional Details" section which displays more information about each algorithm, including runtime complexity and additional notes. These details are stored in a SQLite database.<br /><br />
 The data model is a combination of a DbSet of a SQLite table that is stored in an IEnumerable property, along with a few simple strings that are used to populate the views. The app also makes use of a partial view to maintain a consistent look without needless duplication of code.
-<br />
+<br /><br />
 **Figure 1 - Insertion Sort**
 ![Insertion Sort](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/1-insertion-sort.jpg "Insertion Sort")
-<br />
+<br /><br />
 **Figure 2 - Validation Error**
 ![Validation Error](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/2-validation-error.jpg "Validation Error")
