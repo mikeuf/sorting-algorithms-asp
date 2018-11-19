@@ -12,6 +12,15 @@ http://159.203.176.44/
 <br /><br />
 As of this writing, there is no domain registered.<br />
 
+## Overview
+This program allows you to choose from the following sorting algorithms:
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+
+
 **Figure 1 - Insertion Sort**
 ![Insertion Sort](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/1-insertion-sort.jpg "Insertion Sort")
 
