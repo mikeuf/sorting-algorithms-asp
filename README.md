@@ -1,15 +1,16 @@
 # Sorting Algorithms with ASP.NET Core MVC
-Sorting Algorithms with ASP.NET Core
+This is a web app that allows you to enter a set of numbers and choose from several different sorting algorithms to view the results.
 
 ## Table of Contents
 **[How to Run this Program](#how-to-run-this-program)**  
-**[Examples of Readability Analyses](#examples-of-readability-analyses)**<br /> 
+**[Overview](#overview)**<br /> 
 **[Unit Tests](#unit-tests)**<br /> 
 
-## Examples of Readability Analyses
-The Readability Checker will provide an analysis of the selection. Text with good readability tends to have short sentences, with simple words (Figure 1). Text with medium readability (Figure 2) and poor readability (Figure 3) will have longer sentences and more complex words.If a very small amount of text is entered, the checker may provide unusual scores due to the small sample size.<br /><br />
-**Note:** This version of the Readability Checker may produce slightly different results from the Java version because of differences between the RegEx implementations and because the Java version uses an HTML editor instead of a text editor.
-
+## How to Run this Program
+You should be able to access this program directly from the following URL:<br />
+http://159.203.176.44/
+<br /><br />
+As of this writing, there is no domain registered.<br />
 
 **Figure 1 - Insertion Sort**
 ![Insertion Sort](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/1-insertion-sort.jpg "Insertion Sort")
