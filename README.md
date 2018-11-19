@@ -4,7 +4,6 @@ This is a web app that allows you to enter a set of numbers and choose from seve
 ## Table of Contents
 **[How to Run this Program](#how-to-run-this-program)**  
 **[Overview](#overview)**<br /> 
-**[Unit Tests](#unit-tests)**<br /> 
 
 ## How to Run this Program
 You should be able to access this program directly from the following URL:<br />
@@ -20,6 +19,7 @@ This program allows you to choose from the following sorting algorithms:
 * Merge Sort
 * Quick Sort
 
+Once numbers have been entered and a sort has been selected, SortController peforms a form validation check using regex. If the set passes the check, it is parsed into a list which is sent, by reference, to Library/Sorter.cs, which performs the actual algorithms. It also keeps track of each iteration so the user can see each step of the process.
 
 **Figure 1 - Insertion Sort**
 ![Insertion Sort](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/1-insertion-sort.jpg "Insertion Sort")
