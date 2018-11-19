@@ -19,26 +19,37 @@
     <div class="row">
         <div class="col">
             <div class="panel panel-success">
-                <div class="panel-heading">Results of the @Model.SortType</div>
+                <div class="panel-heading">Completed a @Model.SortType</div>
                 <div class="panel-body">
-                    <div style="display: block; float: right; text-align: left; width: 50%;">
-                        <p><b>Additional Details</b></p>
+                    <dl style="display: block; float: right; text-align: left; width: 50%;">
+                        <h3>Additional Details</h3>
                         @foreach (var item in Model.Algorithms)
-                        {
+        {
+                <dt>Algorithm Name:</dt>
+                <dd>
+                    @Html.DisplayFor(modelItem => item.AlgorithmName)
+                </dd>
+                <dd>&nbsp;</dd>
+                <dt>Runtime complexity:</dt>
+                <dd>
+                    @Html.DisplayFor(modelItem => item.RunTime)
+                </dd>
+                <dd>&nbsp;</dd>
+                <dt>Space complexity:</dt>
+                <dd>
+                    @Html.DisplayFor(modelItem => item.SpaceComplexity)
+                </dd>
+                <dd>&nbsp;</dd>
+                <dt>Additional Notes:</dt>
+                <dd>
+                    @Html.DisplayFor(modelItem => item.AdditionalNotes)
+                </dd>
+}
 
-                            @Html.DisplayFor(modelItem => item.AlgorithmName)
 
-                            @Html.DisplayFor(modelItem => item.AlgorithmID)
 
-                            @Html.DisplayFor(modelItem => item.RunTime)
-                        }
-
-                        @*<p>@ViewBag.AlgoName</p>*@
-                        @*@{var algoName = from a in Model.AlgorithmName select a.AlgorithmName;}*@
-                        @*@{var a = Model.Where(x => x.AlgorithmName.Equals("Bubble Sort")); }*@
-                        @*<b>@Model.Select(x => x.AlgorithmID == 1)</b>*@
-
-                    </div>
+                    </dl>
+                    <h3>Results</h3>
                     <dl>
                         <dt>Before Sorting</dt>
                         <dd>@Model.OriginalNumbers</dd>
