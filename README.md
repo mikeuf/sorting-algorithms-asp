@@ -1,5 +1,5 @@
 # Sorting Algorithms with ASP.NET Core MVC
-This is a web app that allows you to enter a set of numbers and choose from several different sorting algorithms to view the results.
+This is a live web app that allows you to enter a set of numbers and choose from several different sorting algorithms to view the results.
 
 ## Table of Contents
 **[How to Run this Program](#how-to-run-this-program)**  
