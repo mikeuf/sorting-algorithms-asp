@@ -13,3 +13,6 @@ The Readability Checker will provide an analysis of the selection. Text with goo
 
 **Figure 1 - Insertion Sort**
 ![Insertion Sort](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/1-insertion-sort.jpg "Insertion Sort")
+
+**Figure 2 - Validation Error**
+![Validation Error](https://github.com/mikeuf/sorting-algorithms-asp/blob/master/2-validation-error.jpg "Validation Error")
