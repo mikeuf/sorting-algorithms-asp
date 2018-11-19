@@ -13,6 +13,7 @@ namespace SortingAlgorithms.Models
 
         private readonly SortModelContext _context;
 
+
 public SortController(SortModelContext context)
         {
             _context = context;
@@ -26,10 +27,25 @@ public SortController(SortModelContext context)
 
         public IActionResult Sort(string OriginalNumbers, string SortType)
         {
-            var algos = from a in _context.Algorithms
-                        where a.AlgorithmName == "Bubble Sort"
-                            orderby a.AlgorithmID
-                            select a;
+
+
+            //var algos = _context.Algorithm
+            //.FirstOrDefault(a => a.AlgorithmName == "Bubble Sort");
+
+
+
+
+
+
+            //var algos = from a in _context.Algorithm
+            //where a.AlgorithmName == "Bubble Sort"
+            //orderby a.AlgorithmID
+            //select a;
+
+            //  var idonknow = algos.Where(x => x.AlgorithmName = "Bubble Sort");
+
+            //  var e = _context.Algorithms.Where(x => x.AlgorithmName == "Bubble Sort").FirstOrDefault();
+
 
             if ((OriginalNumbers == null) || !ValidateForm(ref OriginalNumbers))
             {
@@ -42,7 +58,7 @@ public SortController(SortModelContext context)
 
             List<int> nums = OriginalNumbers.Split(',').Select(int.Parse).ToList();
 
-            ViewBag.OriginalNumbers = OriginalNumbers;
+          // ViewBag.OriginalNumbers = OriginalNumbers;
 
             if ((OriginalNumbers != null) && (SortType != null))
             {
@@ -76,10 +92,24 @@ public SortController(SortModelContext context)
                 }
             }
 
-            ViewBag.SortType = SortType;
-            ViewBag.SortedNumbers = string.Join(",", nums);
+        //   ViewBag.SortType = SortType;
+         //   ViewBag.SortedNumbers = string.Join(",", nums);
 
-            return View();
+            SortModel sorty = new SortModel();
+            sorty.OriginalNumbers = OriginalNumbers;
+            sorty.SortedNumbers = string.Join(",", nums);
+            sorty.SortType = SortType;
+            sorty.Algorithms = from a in _context.Algorithm
+                        where a.AlgorithmName == "Bubble Sort"
+                        select a;
+
+            if (sorty.Algorithms == null)
+            {
+                return NotFound();
+            }
+
+
+            return View(sorty);
         }
 
         private bool ValidateForm(ref string OriginalNumbers)

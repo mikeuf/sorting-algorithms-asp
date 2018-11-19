@@ -6,7 +6,6 @@
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/bin/Debug/netcoreapp2.1/SortingAlgorithms.pdb
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/bin/Debug/netcoreapp2.1/SortingAlgorithms.Views.dll
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/bin/Debug/netcoreapp2.1/SortingAlgorithms.Views.pdb
-/Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.csprojAssemblyReference.cache
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.csproj.CoreCompileInputs.cache
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.RazorAssemblyInfo.cache
 /Volumes/External Drive/Dropbox/dev/git/SortingAlgorithms/obj/Debug/netcoreapp2.1/SortingAlgorithms.RazorAssemblyInfo.cs
