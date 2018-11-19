@@ -67,12 +67,12 @@ using SortingAlgorithms.Models;
             WriteLiteral("\r\n<div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">Configure a Sort</div>\r\n    <div class=\"panel-body\">\r\n        ");
             EndContext();
             BeginContext(398, 737, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c411d49c91db4e96ba6ba1054097ad14", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bf657d4b3184a3e8c5a3ba7e9a4f85a", async() => {
                 BeginContext(422, 83, true);
                 WriteLiteral("\r\n            <p>1. Enter a set of integers, separated by commas.</p>\r\n            ");
                 EndContext();
                 BeginContext(505, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3c0387f84d7249c7866d7ef0ece47a60", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bfe3c85d25224d76ae82faa72460fc2d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -96,12 +96,12 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n            <p>&nbsp;</p>\r\n            <p>2. Choose a sorting algorithm and click the <b>Sort</b> button.</p>\r\n            ");
                 EndContext();
                 BeginContext(680, 388, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d7a7fa67932457182888a600a0ccd0d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6dd7e84ab6541cca2a634a23cd8c6e4", async() => {
                     BeginContext(707, 18, true);
                     WriteLiteral("\r\n                ");
                     EndContext();
                     BeginContext(725, 48, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2aa0fff04b784e6bbb0424c13234c887", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77dd6510029f4dff88722903393eac3f", async() => {
                         BeginContext(753, 11, true);
                         WriteLiteral("Bubble Sort");
                         EndContext();
@@ -123,7 +123,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     WriteLiteral("\r\n                ");
                     EndContext();
                     BeginContext(791, 54, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3044759d7dc544f9ad09bf5c587533ab", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "294a8f2effd94c489699f1857af1b408", async() => {
                         BeginContext(822, 14, true);
                         WriteLiteral("Selection Sort");
                         EndContext();
@@ -145,7 +145,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     WriteLiteral("\r\n                ");
                     EndContext();
                     BeginContext(863, 54, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "acbc6255276f42ec8594626e51fab24e", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74d75828dd9d48fb91a96b0633531e0e", async() => {
                         BeginContext(894, 14, true);
                         WriteLiteral("Insertion Sort");
                         EndContext();
@@ -167,7 +167,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     WriteLiteral("\r\n                ");
                     EndContext();
                     BeginContext(935, 46, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35dfb0550419465db07176a92d112a62", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fbf49083b774549aed39dbc7d43e609", async() => {
                         BeginContext(962, 10, true);
                         WriteLiteral("Merge Sort");
                         EndContext();
@@ -189,7 +189,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     WriteLiteral("\r\n                ");
                     EndContext();
                     BeginContext(999, 46, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cbd2052f690b4dbb9514c0e40e6e1f2a", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d25bf31717bf49599281d20dec5894c9", async() => {
                         BeginContext(1026, 10, true);
                         WriteLiteral("Quick Sort");
                         EndContext();
